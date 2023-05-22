@@ -32,12 +32,11 @@ ul {
   body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(250,240,230);
-    padding: 0px;
     margin: 0 auto;
 }
 
 main {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -45,10 +44,11 @@ main {
     padding: 30px;  
     text-align: center;
     background-color:rgb(128, 0, 0);
+    margin: 0 auto;
 }
 
 .cabecalho .home {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -66,7 +66,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -81,50 +81,38 @@ main {
 
 .topnav a:hover {
     background-color: rgba(128, 0, 0, 0.5);
-    color: black;
+    color: white;
 }
 
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
     padding: 20px;
-    text-align: justify;
     background-color: rgba(128, 0, 0, 0.5);
-    margin-top: 20px;
-    margin: 20 auto;
+    margin: 0 auto;
 }
 
-.imagesft {
+.footer .corpoFooter {
+    width: 1000px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    text-align: justify;
 }
 
 .imagesft img{
     width: 50px;
     height: 50px;
-    align-content: center;
-    padding: 10px;
 }
 
 .texto {
-    margin-top: 25px;
-    margin-right: 25px;
-    line-height: 15%;
+    line-height: 20%;
 }
 
 .imagesft2 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: right;
+    /*display: flex;
+    flex-flow: row wrap;*/
+    /*justify-content: center;
+    width: 900px*/
     column-gap: 20px;
-    width: 350px;
-}
-
-.imagesft2 h3 {
-    align-self: flex-end;
 }
 
 .imagesft2 img{
