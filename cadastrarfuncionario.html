@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/layoutgeral.css">
-    <link rel="shortcut icon" href="Imagens/logotechpharma.png" type="image/x-icon">
-    <title>TechPharma - Home</title>
+    <link rel="shortcut icon" href="imagens/logotechpharma.png" type="image/x-icon">
+    <title>TechPharma - Cadastrar Funcionário</title>
 </head>
 
 <body>
 
     <header class="cabecalho">
         <div class="home">
-            <h1>HOME</h1>
+            <h1>CADASTRAR FUNCIONÁRIO</h1>
         </div>
 
     </header>
@@ -29,7 +30,65 @@
         </div>
     </nav>
 
-    <main>
+    <main class="container mt-3">
+
+        <form action="">
+            <div class="row g-3">
+                <div class="col">
+                    <label for="nome" class="form-label">NOME</label>
+                    <input type="text" class="form-control labeltxt" placeholder="" aria-label="nome" name="nome" id="nome" minlength="10" maxlenght="300" required pattern="[a-z A-Z] {10-300}[]">
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+
+                <div class="col">
+                    <label for="contato" class="form-label">CONTATO</label>
+                    <input type="text" class="form-control labeltxt" placeholder="" aria-label="contato" name="contato" id="contato" minlength="10" maxlenght="300" required pattern="">
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col">
+                    <label for="dataNasc" class="form-label">DATA DE NASCIMENTO</label>
+                    <input type="text" class="form-control labeltxt" placeholder="" aria-label="dataNasc" name="dataNasc" id="dataNasc" minlength="6" maxlenght="10" required pattern="[0-9]{1-2}/[0-9]{1-2}/[0-9]{2-4}">
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+
+                <div class="col">
+                    <label for="sexo" class="form-label">SEXO</label>
+                    <input type="text" class="form-control labeltxt" placeholder="" aria-label="sexo" name="sexo" id="sexo" minlength="" maxlenght="" required>
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col">
+                    <label for="funcao" class="form-label">FUNÇÃO</label>
+                    <input type="text" class="form-control labeltxt" placeholder="" aria-label="funcao" name="funcao" id="funcao" minlength="" maxlenght="" required>
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+
+                <div class="col">
+                    <label for="salario" class="form-label">SALÁRIO</label>
+                    <input type="text" class="form-control labeltxt" placeholder="" aria-label="salario" name="salario" id="salario" minlength="" maxlenght="" required>
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control labeltxt" placeholder="" aria-label="cpf" name="cpf" id="cpf" minlength="" maxlenght="" required>
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+
+                <div class="col">
+                    <label for="rg">RG</label>
+                    <input type="text" class="form-control labeltxt" placeholder="" aria-label="rg" name="rg" id="rg" minlength="" maxlenght="" required>
+                    <span class="mensagem-erro" data-erro></span>
+                </div>
+            </div>
+        </form>
 
     </main>
 
@@ -55,6 +114,7 @@
             </div>
         </div>
     </footer>
+    <script src="cadastrarfuncionario.js"></script>
 </body>
 
 </html>
