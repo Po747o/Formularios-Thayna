@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/layoutgeral.css">
     <link rel="shortcut icon" href="imagens/logotechpharma.png" type="image/x-icon">
-    <title>TechPharma - Cadastrar Funcionário</title>
+    <title>TechPharma - Cadastrar Produto</title>
 </head>
 
 <body>
 
     <header class="cabecalho">
         <div class="home">
-            <h1>CADASTRAR FUNCIONÁRIO</h1>
+            <h1>CADASTRAR PRODUTO</h1>
         </div>
 
     </header>
@@ -37,15 +37,14 @@
                 <div class="col">
                     <label for="nome" class="form-label">NOME</label>
                     <input type="text" class="form-control" placeholder="" aria-label="nome" name="nome" id="nome"
-                        minlength="10" maxlenght="300" required pattern="[a-z A-Z]{10-300}[]">
+                        minlength="10" maxlength="300" required pattern="[a-z A-Z]{10-300}[]">
                     <span class="mensagem-erro" data-erro></span>
                 </div>
 
                 <div class="col">
-                    <label for="codigo" class="form-label">CÓDIGO DE BARRAS</label>
-                    <input type="text" class="form-control" placeholder="" aria-label="codigo" name="codigo"
-                        id="codigo" minlength="13" maxlenght="13" required
-                        pattern="[0-9]{3}-[0-9]{6}-[0-9]{3}">
+                    <label for="tipo" class="form-label">TIPO</label>
+                    <input type="text" class="form-control" aria-label="tipo" name="tipo" id="tipo"
+                        minlength="5" maxlength="300" required>
                     <span class="mensagem-erro" data-erro></span>
                 </div>
             </div>
@@ -53,66 +52,47 @@
             <div class="row g-3">
                 <div class="col">
                     <label for="pesovolume" class="form-label">PESO/VOLUME</label>
-                    <input type="text" class="form-control" placeholder="" aria-label="pesovolume" name="pesovolume"
-                        id="pesovolume" required>
+                    <input type="text" class="form-control" aria-label="pesovolume" name="pesovolume"
+                        id="pesovolume" minlength="3" maxlength="100" required>
                     <span class="mensagem-erro" data-erro></span>
                 </div>
 
                 <div class="col">
-                    <label for="tipo" class="form-label">TIPO----parei aqui</label>
-
-                    <div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                id="inlineRadioMasculino" value="Masculino">
-                            <label class="form-check-label" for="inlineRadio">MASCULINO</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                id="inlineRadioFeminino" value="Feminino">
-                            <label class="form-check-label" for="inlineRadioFeminino">FEMININO</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                id="inlineRadioIntersexo" value="Intersexo">
-                            <label class="form-check-label" for="inlineRadioIntersexo">INTERSEXO</label>
-                        </div>
-
-                    </div>
+                    <label for="codigo" class="form-label">CÓDIGO DE BARRAS</label>
+                    <input type="text" class="form-control" placeholder="" aria-label="codigo" name="codigo"
+                        id="codigo" minlength="14" maxlength="14" required pattern="[0-9]{3}-[0-9]{6}-[0-9]{3}">
                     <span class="mensagem-erro" data-erro></span>
                 </div>
             </div>
 
             <div class="row g-3">
                 <div class="col">
-                    <label for="funcao" class="form-label">FUNÇÃO</label>
-                    <input type="text" class="form-control" placeholder="" aria-label="funcao" name="funcao" id="funcao"
-                        minlength="5" maxlenght="300" required>
+                    <label for="funcao" class="form-label">FORNECEDOR</label>
+                    <input type="text" class="form-control" aria-label="fornecedor" name="fornecedor" id="fornecedor"
+                        minlength="5" maxlength="300" required>
                     <span class="mensagem-erro" data-erro></span>
                 </div>
 
                 <div class="col">
-                    <label for="salario" class="form-label">SALÁRIO</label>
-                    <input type="text" class="form-control" placeholder="" aria-label="salario" name="salario"
-                        id="salario" minlength="6" required pattern="R$ [0-9]{0-300},[0-9]{1-2}">
+                    <label for="estoque" class="form-label">ESTOQUE</label>
+                    <input type="number" class="form-control" aria-label="estoque" name="estoque"
+                        id="estoque" min="1" required>
                     <span class="mensagem-erro" data-erro></span>
                 </div>
             </div>
 
             <div class="row g-3">
                 <div class="col">
-                    <label for="cpf" class="form-label">CPF</label>
-                    <input type="text" class="form-control" placeholder="" aria-label="cpf" name="cpf" id="cpf"
-                        minlength="14" maxlenght="14" required pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}">
+                    <label for="valorcompra" class="form-label">VALOR DE COMPRA</label>
+                    <input type="text" class="form-control" aria-label="valorcompra" name="valorcompra" id="valorcompra"
+                        minlength="6" maxlength="100" required pattern="R$ [0-9]{0-300},[0-9]{1-2}">
                     <span class="mensagem-erro" data-erro></span>
                 </div>
 
                 <div class="col">
-                    <label for="rg" class="form-label">RG</label>
-                    <input type="text" class="form-control" placeholder="" aria-label="rg" name="rg" id="rg"
-                        minlength="7" required>
+                    <label for="valorvenda" class="form-label">VALOR DE VENDA</label>
+                    <input type="text" class="form-control" aria-label="valorvenda" name="valorvenda" id="valorvenda"
+                        minlength="6" maxlength="100" required pattern="R$ [0-9]{0-300},[0-9]{1-2}">
                     <span class="mensagem-erro" data-erro></span>
                 </div>
             </div>
@@ -152,7 +132,7 @@
             </div>
         </div>
     </footer>
-    <script src="cadastrarfuncionario.js"></script>
+    <script src="cadastrarproduto.js"></script>
 </body>
 
 </html>
